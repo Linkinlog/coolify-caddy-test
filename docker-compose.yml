@@ -1,0 +1,13 @@
+services:
+  caddy:
+    image: caddy:latest
+    restart: always
+    ports:
+      - "${CADDY_PORT:-80}:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    networks:
+      - test
+networks:
+  test:
+    driver: bridge

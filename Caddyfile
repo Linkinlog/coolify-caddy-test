@@ -1,0 +1,7 @@
+http://testing.dahlton.org:80 {
+	respond "Hello, world!"
+}
+
+http://localtest.test:80 {
+	respond "Hello, world!"
+}
