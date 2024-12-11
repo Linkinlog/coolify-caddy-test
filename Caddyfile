@@ -1,3 +1,8 @@
+#globals
+{
+    auto_https off
+}
+
 http://testing.dahlton.org:80 {
 	respond "Hello, world!"
 }
